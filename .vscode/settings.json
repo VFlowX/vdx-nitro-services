@@ -1,0 +1,41 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "vite.autoStart": false,
+  "eslint.experimental.useFlatConfig": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "typescript.preferences.autoImportFileExcludePatterns": ["vue-router"],
+  "eslint.rules.customizations": [
+    { "rule": "@stylistic/*", "severity": "off" },
+    { "rule": "*-indent", "severity": "off" },
+    { "rule": "*-spacing", "severity": "off" },
+    { "rule": "*-spaces", "severity": "off" },
+    { "rule": "*-order", "severity": "off" },
+    { "rule": "*-dangle", "severity": "off" },
+    { "rule": "*-newline", "severity": "off" },
+    { "rule": "*quotes", "severity": "off" },
+    { "rule": "*semi", "severity": "off" }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml"
+  ],
+  "unocss.root": [
+    "./"
+  ]
+}
