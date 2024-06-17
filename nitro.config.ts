@@ -11,6 +11,8 @@ export default defineNitroConfig({
       "services/**/*.ts",
     ],
   },
+  preset: "bun",
   sourceMap: false,
   minify: false,
+  noPublicDir: true,
 })
