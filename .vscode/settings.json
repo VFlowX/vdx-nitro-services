@@ -1,6 +1,5 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
-  "vite.autoStart": false,
   "eslint.useFlatConfig": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
@@ -34,8 +33,5 @@
     "json",
     "jsonc",
     "yaml"
-  ],
-  "unocss.root": [
-    "./"
   ]
 }

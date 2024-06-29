@@ -1,3 +1,3 @@
 export default eventHandler((event) => {
-  return "You've reached index route"
+  return "service is up and running"
 })

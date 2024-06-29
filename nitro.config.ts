@@ -11,7 +11,7 @@ export default defineNitroConfig({
       "services/**/*.ts",
     ],
   },
-  preset: "vercel",
+  preset: "bun",
   sourceMap: false,
   minify: true,
   noPublicDir: true,
