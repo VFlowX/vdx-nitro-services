@@ -10,7 +10,6 @@
   "files.associations": {
     "*.css": "postcss"
   },
-  "typescript.preferences.autoImportFileExcludePatterns": ["vue-router"],
   "eslint.rules.customizations": [
     { "rule": "@stylistic/*", "severity": "off" },
     { "rule": "*-indent", "severity": "off" },

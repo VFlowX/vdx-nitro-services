@@ -1,9 +1,12 @@
 // https://nitro.unjs.io/config
 export default defineNitroConfig({
-  baseURL: "/",
-  experimental: {
-    asyncContext: true,
+  storage: {
+    fs: {
+      driver: "fs",
+      base: "./data/",
+    },
   },
+  baseURL: "/",
   timing: true,
   errorHandler: "~/error",
   imports: {

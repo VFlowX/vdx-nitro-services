@@ -9,7 +9,7 @@ const stream = pretty({
   singleLine: true,
   ignore: "pid,hostname",
 })
-export function initPino(logPath: string, mode = "dev") {
+export function initPino(logPath: string) {
   const transport = pino.transport({
     targets: [
       {

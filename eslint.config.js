@@ -1,29 +1,22 @@
 import antfu from "@antfu/eslint-config"
+import oxlint from "eslint-plugin-oxlint"
 
 export default antfu(
   {
     stylistic: {
-      indent: 2, // 4, or 'tab'
-      quotes: "double", // or 'double'
+      indent: 2,
+      quotes: "double",
     },
     ignores: [
-      // eslint ignore globs here
-      "**/.nitro/**/*",
-      "**/.output/**/*",
-      "dist",
-      "node-modules",
     ],
-    typescript: true,
   },
+  oxlint.configs["flat/recommended"],
   {
-    // overrides
-    settings: {
-
-    },
     rules: {
-      "unused-imports/no-unused-imports": "off",
+      "unused-imports/no-unused-imports": "warn",
       "unused-imports/no-unused-vars": "off",
       "node/prefer-global/process": "off",
+      "n/prefer-global/buffer": "off",
     },
   },
 )
